@@ -15,12 +15,12 @@ export default function Academy() {
       px-4 py-6">
 
     <section
-      data-aos="fade-right"
-      data-aos-duration="10000"
+      // data-aos="fade-right"
+      // data-aos-duration="10000"
       className="w-full py-8 px-10 bg-gray-100 dark:bg-zinc-900  dark:text-black 
-                  flex flex-row gap-5 rounded-xl shadow-xl shadow-zinc-300 dark:shadow-zinc-800"
+                  flex flex-col items-center  gap-7 rounded-xl shadow-xl shadow-zinc-300 dark:shadow-zinc-800"
     >
-      <div className="flex items-center gap-4 border-r border-gray-400 pr-6">
+      <div className=" flex items-center gap-4 md:border-r border-gray-400 ">
         <GraduationCap size={38} className="dark:text-white" />
         <h1 className="text-black dark:text-white text-xl">
           Formação acadêmica

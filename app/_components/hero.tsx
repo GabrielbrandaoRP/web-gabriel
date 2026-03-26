@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import perfilPic from "../assets/perfil-pc.jpeg";
-import {  MoveDown } from "lucide-react";
+import {  MoveDown, MoveRight } from "lucide-react";
 import Lottie from "lottie-react";
 import code from "../assets/animations/code-animation.json";
 import idea from "../assets/animations/idea-lamp.json";
@@ -10,7 +10,7 @@ import platform from "../assets/animations/platforms.json";
 export default function Hero() {
   return (
     <div className="bg-linear-to-b from-white from-50%  to-gray-600 to-90%
-       px-4 pt-24 py-6">
+       px-4 pt-24 py-6 md:bg-red-500">
       <section
         className="w-full flex flex-col p-6 bg-radial-[at_50%_50%] from-gray-500 dark:from-zinc-950 to-gray-200 dark:to-zinc-800 
         shadow-lg
@@ -45,13 +45,13 @@ export default function Hero() {
             animationData={idea}
             loop={true}
           />
-          <MoveDown size={22} />
+          <MoveRight size={26} />
           <Lottie
             className=" size-16 md:size-26"
             animationData={code}
             loop={true}
           />
-          <MoveDown size={32} />
+          <MoveRight size={26} />
           <Lottie
             className="size-20 md:size-28"
             animationData={platform}
