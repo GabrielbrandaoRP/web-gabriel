@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import perfilPic from "../assets/perfil-pc.jpeg";
-import { ChevronDown, MoveDown } from "lucide-react";
+import {  MoveDown } from "lucide-react";
 import Lottie from "lottie-react";
 import code from "../assets/animations/code-animation.json";
 import idea from "../assets/animations/idea-lamp.json";

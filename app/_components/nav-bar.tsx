@@ -13,10 +13,7 @@ const navLinks = [
 ];
 
 export default function NavBar() {
-  const w = window.innerWidth
-  
-  console.log(w)
-  console.log(typeof(w))
+
 
   return (
     <header className="h-15 rounded-xl fixed top-4 inset-x-0 z-50
