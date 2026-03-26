@@ -73,7 +73,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <div className="px-8 py-2 mx-4 border border-gray-400 rounded-3xl" data-aos="fade-bottom">
+    <div className="px-8 py-2 mx-4 border border-gray-400 rounded-3xl md:mx-60">
       <div className="flex justify-between">
         {socialLinks.map((item) => (
           <Link key={item.id} href={item.url} className="shadow-md shadow-zinc-800 rounded-full hover:scale-105">

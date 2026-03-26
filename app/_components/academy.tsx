@@ -12,7 +12,7 @@ export default function Academy() {
   return (
 
     <div className="bg-linear-to-b from-gray-600 from-50%  to-white to-90%
-      px-4 py-6">
+      px-4 py-6 md:px-60">
 
     <section
       // data-aos="fade-right"

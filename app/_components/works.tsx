@@ -12,7 +12,7 @@ import { FlaskConical } from "lucide-react";
 export default function Works() {
   return (
     <div className="bg-linear-to-b from-white from-50%  to-gray-600 to-90%
-      px-4 py-6
+      px-4 py-6 md:px-60
     ">
 
     <section

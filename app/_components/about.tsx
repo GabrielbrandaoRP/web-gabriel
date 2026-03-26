@@ -9,7 +9,7 @@ import { languages, frameworks, skills } from "../json/infos";
 
 export default function About() {
   return (
-    <div className="bg-linear-to-b from-gray-600 from-50%  to-white to-80% px-4 py-6  ">
+    <div className="bg-linear-to-b from-gray-600 from-50%  to-white to-80% px-4 py-6 md:px-60 ">
 
     <section data-aos="fade-down" className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col rounded-xl shadow-lg shadow-zinc-300 dark:shadow-zinc-800" id="about">
       <div className="flex flex-col gap-4">
@@ -24,11 +24,6 @@ export default function About() {
           recente tecnologias do mercado, <br />
           abordando as melhores práticas de código e de negócio. Com foco em
           modernidade e alto desempenho. <br />
-          Em busca sempre de aprimorar minhas habilidades encarando novos
-          desafios, consigo obter um <br />
-          conhecimento contínuo e sólido ideal para quaisquer nichos ao qual
-          trabalho. Buscando inovações <br />
-          para melhores entregas.
         </p>
       </div>
 

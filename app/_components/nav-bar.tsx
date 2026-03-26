@@ -18,7 +18,7 @@ export default function NavBar() {
   return (
     <header className="h-15 rounded-xl fixed top-4 inset-x-0 z-50
     flex p-4 px-8 justify-between items-center
-    mx-3
+    mx-3 md:mx-60
     bg-black/10 backdrop-blur-sm dark:bg-black/20 
      
      ">
