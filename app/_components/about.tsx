@@ -7,13 +7,11 @@ import {
 import React from "react";
 import { languages, frameworks, skills } from "../json/infos";
 
-
-
-
-
 export default function About() {
   return (
-    <section data-aos="fade-down" className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col rounded-xl shadow-xl shadow-zinc-300 dark:shadow-zinc-800" id="about">
+    <div className="bg-linear-to-b from-gray-600 from-50%  to-white to-80% px-4 py-6  ">
+
+    <section data-aos="fade-down" className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col rounded-xl shadow-lg shadow-zinc-300 dark:shadow-zinc-800" id="about">
       <div className="flex flex-col gap-4">
         <h1 className="text-xl font-bold text-cyan-950 dark:text-white">Sobre mim</h1>
 
@@ -76,5 +74,6 @@ export default function About() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

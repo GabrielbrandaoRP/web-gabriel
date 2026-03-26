@@ -11,8 +11,12 @@ import { FlaskConical } from "lucide-react";
 
 export default function Works() {
   return (
+    <div className="bg-linear-to-b from-white from-50%  to-gray-600 to-90%
+      px-4 py-6
+    ">
+
     <section
-      className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col gap-5 rounded-xl shadow-xl shadow-zinc-300 dark:shadow-zinc-800"
+      className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col gap-5 rounded-xl shadow-lg shadow-zinc-400 dark:shadow-zinc-800"
       id="about"
       data-aos="fade-left" data-aos-duration="10000"
     >
@@ -96,5 +100,6 @@ export default function Works() {
         
       </div>
     </section>
+    </div>
   );
 }

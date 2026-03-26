@@ -23,3 +23,4 @@ export const skills = [
   { id: 4, label: "Git" },
   { id: 5, label: "Docker" }
 ];
+

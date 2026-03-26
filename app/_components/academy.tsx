@@ -10,6 +10,10 @@ import gran from "@/app/assets/logo-gran.svg";
 export default function Academy() {
 
   return (
+
+    <div className="bg-linear-to-b from-gray-600 from-50%  to-white to-90%
+      px-4 py-6">
+
     <section
       data-aos="fade-right"
       data-aos-duration="10000"
@@ -114,5 +118,6 @@ export default function Academy() {
       </div>
       {/* Modal */}
     </section>
+    </div>
   );
 }
