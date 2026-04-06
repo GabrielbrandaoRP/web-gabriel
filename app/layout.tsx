@@ -3,7 +3,10 @@ import "./globals.css";
 import { jetbrainsMono } from './fonts';
 import NavBar from "./_components/nav-bar";
 import { AosInit } from "./_components/aos-init";
-import { Raleway} from 'next/font/google'
+import { Raleway, JetBrains_Mono } from 'next/font/google'
+import { cn } from "@/lib/utils";
+
+const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
 export const metadata: Metadata = {
   title: "Gabriel Brandão - Desenvolvedor Front-end",
@@ -25,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={raleway.className}>
+    <html lang="en" className={cn(raleway.className, "font-mono", jetbrainsMono.variable)}>
       <body>
         <NavBar/>
         {children}
