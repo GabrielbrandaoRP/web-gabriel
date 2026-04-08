@@ -11,10 +11,8 @@ export default function Academy() {
 
   return (
 
-    <div className="bg-linear-to-b from-gray-600 from-50%  to-white to-90%
-      px-4 py-6 md:px-60">
-
-    <section
+    <section className="px-4 py-6 md:px-60">
+    <div
       // data-aos="fade-right"
       // data-aos-duration="10000"
       className="w-full py-8 px-10 bg-gray-100 dark:bg-zinc-900  dark:text-black 
@@ -117,7 +115,7 @@ export default function Academy() {
         </div>
       </div>
       {/* Modal */}
-    </section>
     </div>
+    </section>
   );
 }

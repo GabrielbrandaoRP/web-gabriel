@@ -9,9 +9,8 @@ import { languages, frameworks, skills } from "../json/infos";
 
 export default function About() {
   return (
-    <div className="bg-linear-to-b from-gray-600 from-50%  to-white to-80% px-4 py-6 md:px-60 ">
-
-    <section data-aos="fade-down" className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col rounded-xl shadow-lg shadow-zinc-300 dark:shadow-zinc-800" id="about">
+    <section className="px-4 py-6 md:px-60 ">
+    <div data-aos="fade-down" className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col rounded-xl shadow-lg shadow-zinc-300 dark:shadow-zinc-800" id="about">
       <div className="flex flex-col gap-4">
         <h1 className="text-xl font-bold text-cyan-950 dark:text-white">Sobre mim</h1>
 
@@ -29,7 +28,7 @@ export default function About() {
 
       <div className="w-full bg-gray-200 dark:bg-gray-400/30 shadow-lg rounded-lg 
        flex justify-between px-6 py-4 flex-col md:flex-row gap-4">
-        <div className="flex gap-6  md:gap-4 p-3 items-center flex-col border-b md:border-0 border-gray-400">
+        <div className="flex gap-6  md:gap-4 p-3 items-center flex-col md:border-0 border-gray-400">
           <div className="flex flex-row items-center gap-3">
             <Code2 size={34} color="#6d28d9"/>
             <p className="dark:text-white ">Linguagens</p>
@@ -43,12 +42,12 @@ export default function About() {
         </div>
 
         <div className="flex gap-6  md:gap-4 p-3 items-center flex-col 
-          border-b md:border-l md:border-gray-400 max-w-120">
+          md:border-l md:border-gray-400 max-w-120">
           <div className="flex flex-row items-center gap-3 ">
             <Boxes size={34} color="#1e78d2"/>
             <p className="dark:text-white">FrameWorks/Bibliotecas</p>
           </div>
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1 px-5 md:px-0">
               {frameworks.map((item) => (
             <Badge className="hover:scale-103 cursor-pointer" key={item.id}>{item.label}</Badge>
            ))}
@@ -68,7 +67,7 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
     </div>
+    </section>
   );
 }

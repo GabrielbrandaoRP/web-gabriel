@@ -141,3 +141,28 @@ body {
     @apply font-mono;
   }
 }
+
+@keyframes loaderAnimation {
+  0% {
+    transform: translateX(100vw) rotate(0deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-150vh) rotate(10deg);
+    opacity: 0;
+  }
+}
+
+.animate-loader {
+  animation: loaderAnimation 3s ease-in-out forwards;
+}

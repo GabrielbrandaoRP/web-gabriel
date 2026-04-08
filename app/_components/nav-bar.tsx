@@ -1,14 +1,19 @@
 "use client";
-import { ListIcon, XIcon } from "@phosphor-icons/react";
+import { ArrowSquareOutIcon, ListIcon, XIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
-const navLinks = [
-  { label: "Início", href: "#inicio" },
-  { label: "Projetos", href: "#about" },
-  { label: "Portifólio", href: "#portifolio" },
-  { label: "Contato", href: "#contato" },
+interface NavLinkProps {
+  id: number;
+  label: string;
+  href: string;
+  icon?: React.ReactNode;
+}
+const navLinks:NavLinkProps[] = [
+  { id: 1, label: "Início", href: "/" },
+  {id: 2, label: "Projetos ", href: "#", icon: <ArrowSquareOutIcon size={22} color="#3f3f46"/> },
+  {id: 3, label: "Portifólio", href: "#portifolio" },
+  { id: 4,label: "Contato", href: "#contato" },
 ];
 
 export default function NavBar() {
@@ -35,12 +40,14 @@ export default function NavBar() {
             </h1>
           </Link>
 
-      
+          
           <nav className="hidden md:flex gap-6 text-black dark:text-white">
-            <Link href="#">Home</Link>
-            <Link href="#">Sobre</Link>
-            <Link href="#">Projetos</Link>
-            <Link href="#">Contato</Link>
+            {navLinks.map((i) => (
+              <Link key={i.id} href={i.href} className="flex gap-2 items-center"  >
+                {i.label}
+                { i.icon}
+              </Link>
+           ))}
           </nav>
 
           
@@ -75,19 +82,11 @@ export default function NavBar() {
         >
           <XIcon size={32} />
         </button>
-
-        <Link onClick={() => setMenuOpen(false)} href="#">
-          Home
-        </Link>
-        <Link onClick={() => setMenuOpen(false)} href="#">
-          Sobre
-        </Link>
-        <Link onClick={() => setMenuOpen(false)} href="#">
-          Projetos
-        </Link>
-        <Link onClick={() => setMenuOpen(false)} href="#">
-          Contato
-        </Link>
+        {navLinks.map((i) => (
+            <Link className="flex gap-2 items-center" key={i.id} onClick={() => setMenuOpen(false)}
+              href={i.href}>{i.label}{ i.icon}</Link>
+        ))}
+       
       </div>
     </>
   );
