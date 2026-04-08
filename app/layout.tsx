@@ -4,6 +4,8 @@ import NavBar from "./_components/nav-bar";
 import { AosInit } from "./_components/aos-init";
 import { Raleway } from 'next/font/google'
 import { cn } from "@/lib/utils";
+import PageLoader from "./_components/page-loader";
+import { ToggleModeColor } from "./_components/toggle-mode-color";
 
 
 export const metadata: Metadata = {
@@ -24,8 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn(raleway.className, "font-mono")}>
       <body>
+        <PageLoader />
         <NavBar/>
         {children}
+        <ToggleModeColor/>
         <AosInit />
       </body>
     </html>

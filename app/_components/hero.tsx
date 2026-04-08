@@ -9,9 +9,8 @@ import platform from "../assets/animations/platforms.json";
 
 export default function Hero() {
   return (
-    <div className="bg-linear-to-b from-white from-50%  to-gray-600 to-90%
-       px-4 pt-24 py-6 md:px-60">
-      <section
+    <section className="px-4 pt-24 py-6 md:px-60">
+      <div
         className="w-full flex flex-col p-6 bg-radial-[at_50%_50%] from-gray-500 dark:from-zinc-950 to-gray-200 dark:to-zinc-800 
         shadow-lg
          shadow-zinc-400 dark:shadow-zinc-800
@@ -58,7 +57,7 @@ export default function Hero() {
             loop={true}
           />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
