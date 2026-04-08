@@ -142,9 +142,13 @@ body {
   }
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 @keyframes loaderAnimation {
   0% {
-    transform: translateX(100vw) rotate(0deg);
+    transform: translateX(100%) rotate(0deg);
     opacity: 0;
   }
 
