@@ -11,12 +11,28 @@ import { ToggleModeColor } from "./_components/toggle-mode-color";
 export const metadata: Metadata = {
   title: "Gabriel Brandão - Desenvolvedor Front-end",
   description: "Front-end Developement",
+  icons: {
+      icon: [
+        {
+          url: "@/app/assets/logo-branco@4x-8.png",
+          media: "(prefers-color-scheme: light)",
+        },
+        {
+          url: "@/app/assets/logo-preto@4x-8.png",
+          media: "(prefers-color-scheme: dark)",
+        },
+      ],
+    },
+
 };
+
+
 
 export const raleway = Raleway({ 
   subsets: ['latin'],
   display: 'swap',
 });
+
 
 export default function RootLayout({
   children,
