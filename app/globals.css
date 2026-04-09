@@ -148,7 +148,7 @@ html, body {
 
 @keyframes loaderAnimation {
   0% {
-    transform: translateX(100%) rotate(0deg);
+    transform: translateX(100%) rotate(-240deg);
     opacity: 0;
   }
 
