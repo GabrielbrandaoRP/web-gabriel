@@ -1,6 +1,6 @@
 import Image from "next/image";
-import confrapag from "../assets/confrapag-icon.jpeg";
-import contax from "../assets/liq-contax.png";
+import confrapag from "@/app/assets/confrapag-icon.jpeg";
+import contax from "@/app/assets/liq-contax.png";
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +11,10 @@ import { FlaskConical } from "lucide-react";
 
 export default function Works() {
   return (
-    <section className="px-4 py-6 md:px-60
+    <section className="px-4 py-6 md:px-8
+            lg:px-16
+            xl:px-32
+            2xl:px-60
     ">
     <div
       className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col gap-5 rounded-xl shadow-lg shadow-zinc-400 dark:shadow-zinc-800"

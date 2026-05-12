@@ -1,5 +1,5 @@
 "use client"
-import CardProject from '../_components/card-project'
+import CardProject from '../../components/shared/card-project'
 import img1 from "../assets/face.png"
 import img2 from "../assets/logo-santander.png"
 import img3 from "../assets/liq-contax.png"

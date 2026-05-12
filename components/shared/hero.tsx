@@ -1,15 +1,18 @@
 "use client";
 import Image from "next/image";
-import perfilPic from "../assets/perfil-pc.jpeg";
-import {  MoveDown, MoveRight } from "lucide-react";
+import perfilPic from "@/app/assets/perfil-pc.jpeg";
+import { MoveRight } from "lucide-react";
 import Lottie from "lottie-react";
-import code from "../assets/animations/code-animation.json";
-import idea from "../assets/animations/idea-lamp.json";
-import platform from "../assets/animations/platforms.json";
+import code from "@/app/assets/animations/code-animation.json";
+import idea from "@/app/assets/animations/idea-lamp.json";
+import platform from "@/app/assets/animations/platforms.json";
 
 export default function Hero() {
   return (
-    <section className="px-4 pt-24 py-6 md:px-60">
+    <section className="px-4 pt-24 py-6 md:px-8
+            lg:px-16
+            xl:px-32
+            2xl:px-60">
       <div
         className="w-full flex flex-col p-6 bg-radial-[at_50%_50%] from-gray-500 dark:from-zinc-950 to-gray-200 dark:to-zinc-800 
         shadow-lg

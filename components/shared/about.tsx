@@ -5,11 +5,14 @@ import {
   Lightbulb,
 } from "lucide-react";
 import React from "react";
-import { languages, frameworks, skills } from "../json/infos";
+import { languages, frameworks, skills } from "@/utils/json/infos";
 
 export default function About() {
   return (
-    <section className="px-4 py-6 md:px-60 ">
+    <section className="px-4 py-6 md:px-8
+            lg:px-16
+            xl:px-32
+            2xl:px-60 ">
     <div data-aos="fade-down" className="w-full p-5 px-10 bg-gray-100 dark:bg-zinc-900 dark:text-black flex flex-col rounded-xl shadow-lg shadow-zinc-300 dark:shadow-zinc-800" id="about">
       <div className="flex flex-col gap-4">
         <h1 className="text-xl font-bold text-cyan-950 dark:text-white">Sobre mim</h1>

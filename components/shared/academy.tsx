@@ -1,7 +1,7 @@
 "use client";
 import { GraduationCap } from "lucide-react";
 import Image from "next/image";
-import { coursesItems } from "../json/infos";
+import { coursesItems } from "@/utils/json/infos"
 import {
   Collapsible,
   CollapsibleContent,
@@ -19,7 +19,10 @@ export default function Academy() {
   const hasHiddenItems = hiddenItems.length > 0;
   return (
 
-    <section className="px-4 py-6 md:px-60">
+    <section className="px-4 py-6 md:px-8
+            lg:px-16
+            xl:px-32
+            2xl:px-60">
     <div
       // data-aos="fade-right"
       // data-aos-duration="10000"

@@ -9,48 +9,51 @@ interface NavLinkProps {
   href: string;
   icon?: React.ReactNode;
 }
-const navLinks:NavLinkProps[] = [
+const navLinks: NavLinkProps[] = [
   { id: 1, label: "Início", href: "/" },
-  {id: 2, label: "Projetos ", href: "#", icon: <ArrowSquareOutIcon size={22} color="#3f3f46"/> },
-  {id: 3, label: "Portifólio", href: "#portifolio" },
-  { id: 4,label: "Contato", href: "#contato" },
+  {
+    id: 2,
+    label: "Projetos ",
+    href: "#",
+    icon: <ArrowSquareOutIcon size={22} color="#3f3f46" />,
+  },
+  { id: 3, label: "Portifólio", href: "#portifolio" },
+  { id: 4, label: "Contato", href: "/contact" },
 ];
 
 export default function NavBar() {
- const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
   return (
-    
-
     <>
-      
- {!menuOpen && (
+      {!menuOpen && (
         <header
           className="h-15 rounded-xl fixed top-4 inset-x-0 z-50
           flex p-4 px-6 md:px-8 justify-between items-center
-          mx-3 md:mx-60
+          mx-3 md:mx-8 lg:mx-24 xl:mx-32
           bg-black/10 backdrop-blur-sm dark:bg-black/20"
         >
-         
           <Link href="/" className="flex flex-row gap-4 items-center">
             <h1 className="text-black dark:text-white text-2xl font-semibold">
               .gabriel brandão
             </h1>
           </Link>
 
-          
           <nav className="hidden md:flex gap-6 text-black dark:text-white">
             {navLinks.map((i) => (
-              <Link key={i.id} href={i.href} className="flex gap-2 items-center"  >
+              <Link
+                key={i.id}
+                href={i.href}
+                className="flex gap-2 items-center"
+              >
                 {i.label}
-                { i.icon}
+                {i.icon}
               </Link>
-           ))}
+            ))}
           </nav>
 
-          
           <button
             onClick={() => setMenuOpen(true)}
             className="md:hidden text-black dark:text-white text-2xl"
@@ -60,7 +63,6 @@ export default function NavBar() {
         </header>
       )}
 
-   
       <div
         className={`
           fixed inset-0 z-50
@@ -75,7 +77,6 @@ export default function NavBar() {
           }
         `}
       >
-       
         <button
           onClick={() => setMenuOpen(false)}
           className="absolute top-10 right-10 text-3xl"
@@ -83,10 +84,16 @@ export default function NavBar() {
           <XIcon size={32} />
         </button>
         {navLinks.map((i) => (
-            <Link className="flex gap-2 items-center" key={i.id} onClick={() => setMenuOpen(false)}
-              href={i.href}>{i.label}{ i.icon}</Link>
+          <Link
+            className="flex gap-2 items-center"
+            key={i.id}
+            onClick={() => setMenuOpen(false)}
+            href={i.href}
+          >
+            {i.label}
+            {i.icon}
+          </Link>
         ))}
-       
       </div>
     </>
   );

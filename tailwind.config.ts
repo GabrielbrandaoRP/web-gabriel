@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        inter: ["var(--font-inter)"],
+        raleway: ["var(--font-raleway)"],
       },
       keyframes :{
         float:{
